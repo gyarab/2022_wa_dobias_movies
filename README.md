@@ -24,6 +24,3 @@ spuštění projektu v adresáři gamdb:
 
 otevření projektu v prohlížeči:
     localhost:8000
-
-
-Z jakýho důvodu mi ten hňup "db.sqlite3"furt leze do Gitu???????? >:\
