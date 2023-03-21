@@ -9,7 +9,7 @@ aktivace venv:
 
 instalace requirements.txt:
 
-    pip install -r reuirements.txt
+    pip install -r requirements.txt
 
 
 
