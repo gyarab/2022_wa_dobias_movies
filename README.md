@@ -12,6 +12,10 @@ instalace requirements.txt:
     pip install -r requirements.txt
 
 
+naplnění databáze daty:
+
+    python manage.py --format yaml loaddata./fixtures/*.yaml
+
 
 spuštění projektu v adresáři gamdb:
 
