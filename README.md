@@ -1,4 +1,5 @@
 instalace venv:
+
     py -3 -m venv venv
 
 aktivace venv:
@@ -12,10 +13,7 @@ instalace requirements.txt:
 
 
 
-spuštění projektu:
-
-    cd gamdb
-    
+spuštění projektu v adresáři gamdb:
 
     python manage.py runserver
 
