@@ -17,10 +17,17 @@ naplnění databáze daty:
     python manage.py --format yaml loaddata./fixtures/*.yaml
 
 
-spuštění projektu v adresáři gamdb:
+spuštění projektu (v adresáři gamdb):
 
     python manage.py runserver
 
 
 otevření projektu v prohlížeči:
     localhost:8000
+
+
+Po upravení models.py nebo admin.py (v adresáři gamdb):
+
+    python manage.py makemigrtions
+
+    python manage.py migrate
