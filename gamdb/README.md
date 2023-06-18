@@ -28,6 +28,6 @@ otevření projektu v prohlížeči:
 
 Po upravení models.py nebo admin.py (v adresáři gamdb):
 
-    python manage.py makemigrtions
+    python manage.py makemigrations
 
     python manage.py migrate
