@@ -14,7 +14,9 @@ instalace requirements.txt:
 
 naplnění databáze daty:
 
-    python manage.py --format yaml loaddata./fixtures/*.yaml
+    py manage.py loadata fixtures/*
+
+    py manage.py dumpdata --format yaml [typeName]
 
 
 spuštění projektu (v adresáři gamdb):
