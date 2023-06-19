@@ -8,10 +8,10 @@
 {% block content %}
 <h1>Films</h1>
 
-<div class="row">
+<div class="row" style="background-color: #353935; color: #C5C5C5;">
     <form method="get" action="./">
-    <div class="input-group mb-3">
-        <input type="text" name="search" value="{{ search|default:"" }}" class="form-control" placeholder="..." aria-label="Hledat" aria-describedby="button-addon2">
+    <div class="input-group mb-3" >
+        <input type="text" name="search" value="{{ search|default:"" }}" class="form-control" placeholder="..." aria-label="Hledat" aria-describedby="button-addon2" style="background-color: #353935; color: #C5C5C5;">
         <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
     </div>
     </form>
@@ -35,14 +35,14 @@
     <div class="col">
         <div class="card h-100">
             <img class="card-img-top" src="{% if movie.image_url %}{{movie.image_url}}{% else %}https://place-hold.it/300x150/{% endif %}" alt="Card image cap">
-            <div class="card-body">
+            <div class="card-body" style="background-color: #353935; color: #C5C5C5;">
                 <h5 class="card-title">{{ movie.name }}</h5>
                 {% for genre in movie.genres.all %}
                     <span class="badge rounded-pill text-bg-primary">{{genre.name}}</span>
                 {% endfor %}
                 <p class="card-text ">{{ movie.description|truncatewords_html:"20" }}</p>
             </div>
-            <div class="card-footer text-end">
+            <div class="card-footer text-end" style="background-color: #353935; color: #C5C5C5;">
                 <a href="{% url 'movie' movie.id %}" class="btn btn-primary">Details</a>
             </div>
         </div>

@@ -1,30 +1,100 @@
 - model: films.movie
+  pk: 5
+  fields:
+    name: Stavek Boritel
+    slug: Stavek_Boritel
+    image_url: https://g.denik.cz/50/7a/borek_stavitel_1_ara_denik-320-16x9.jpg
+    year: 1234
+    avg_rating: 99.0
+    description: Builds and demolishes... sometimes a bit scary
+    director: 1
+    actors: []
+    genres:
+    - 1
+    - 2
+- model: films.movie
+  pk: 6
+  fields:
+    name: Mr. Poper's penguins
+    slug: Mr_Popers_penguins
+    image_url: https://i.guim.co.uk/img/static/sys-images/Film/Pix/pictures/2011/8/3/1312385797081/Jim-Carrey-flicks-water-a-007.jpg?width=465&quality=85&dpr=1&s=none
+    year: 2011
+    avg_rating: 47.0
+    description: everybody loves penguins... but some are assasins
+    director: 2
+    actors:
+    - 2
+    genres:
+    - 1
+- model: films.comment
   pk: 1
   fields:
-    name: Top Gun   
-    year: 2022
-    description: Tom Cruise again...
-- model: films.movie
+    movie: 5
+    author: Andy Babišù
+    text: I like his double chin
+    rating: 100
+    created_at: 2023-06-19 21:02:49.050300+00:00
+- model: films.comment
   pk: 2
   fields:
-    name: Shrek
-    year: 2001
-    description: Green dude
-- model: films.movie
+    movie: 6
+    author: me >:(
+    text: 19. 6. killed by a penguin during a game of codenames
+    rating: 12
+    created_at: 2023-06-19 21:04:45.755304+00:00
+- model: films.comment
   pk: 3
   fields:
-    name: Pulp Fiction
-    year: 1994
-    description: ''
-- model: films.movie
+    movie: 6
+    author: me >:(
+    text: 19. 6. killed by a penguin during a game of codenames
+    rating: 12
+    created_at: 2023-06-19 21:06:21.646731+00:00
+- model: films.comment
   pk: 4
   fields:
-    name: Fight Club
-    year: 1999
-    description: ''
-- model: films.movie
+    movie: 6
+    author: me >:(
+    text: 19. 6. killed by a penguin during a game of codenames
+    rating: 12
+    created_at: 2023-06-19 21:06:28.007773+00:00
+- model: films.director
   pk: 1
   fields:
-    name: SamotÃ¡Å™i 
-    year: 2000
-    description: ''
+    name: Joe Biden
+    birth_year: 3
+    slug: Joe_Biden
+    photo_url: https://i.ytimg.com/vi/U5Mwc12LtRY/maxresdefault.jpg
+    description: does not know how to use stairs
+- model: films.director
+  pk: 2
+  fields:
+    name: Mark Vody
+    birth_year: 1964
+    slug: Mark_Vody
+    photo_url: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFRYYGRgYGhoYGhocGhgYGhgYGBgaGhgaGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjQhISQxNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDE0NDQ0NDQ0NDQ0NDQ0NDQ0MT8/PzQ0NP/AABEIAPUAzgMBIgACEQEDEQH/
+    description: Does not drink to much
+- model: films.actor
+  pk: 1
+  fields:
+    name: Míla Zemanù
+    birth_year: 1929
+    slug: Mila_Zemanu
+    photo_url: https://www.bambu.cz/public/foto/XOmNZkHJhQxfuf5.jpg
+    description: Becherovka a cigárko for life
+- model: films.actor
+  pk: 2
+  fields:
+    name: Jim Carrey
+    birth_year: 1962
+    slug: Jim_Carrey
+    photo_url: https://ih1.redbubble.net/image.2470079635.3026/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg
+    description: :D
+- model: films.genre
+  pk: 1
+  fields:
+    name: Comedy
+- model: films.genre
+  pk: 2
+  fields:
+    name: horror

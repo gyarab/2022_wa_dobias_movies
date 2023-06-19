@@ -1,6 +1,5 @@
 {% extends 'main.html' %}
 
-
 {% block title %}
     Actors | {{ block.super }}
 {% endblock %}
@@ -12,11 +11,11 @@
     <div class="col">
         <div class="card h-100">
             <img class="card-img-top" src="{% if actor.photo_url %}{{actor.photo_url}}{% else %}https://place-hold.it/180x100/{% endif %}" alt="Card image cap">
-            <div class="card-body">
+            <div class="card-body" style="background-color: #353935; color: #C5C5C5;"> 
                 <h5 class="card-title">{{ actor.name }}</h5>
                 <p class="card-text ">{{ actor.description|truncatewords_html:10|safe }}</p>
             </div>
-            <div class="card-footer text-end">
+            <div class="card-footer text-end"style="background-color: #353935; color: #C5C5C5;">
                 <a href="{% url 'actor' actor.id %}" class="btn btn-primary">Detail</a>
             </div>
         </div>
